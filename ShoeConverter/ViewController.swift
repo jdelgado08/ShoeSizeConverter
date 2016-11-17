@@ -31,16 +31,14 @@ class ViewController: UIViewController {
 //        var integerFromTextField = Int(sizeFromTextField!)!
        // var optionalIntegerFromTextField = integerFromTextField!
        
-        var sizeFromTextField = Int(mensShoeSizeTextField.text!)!
-        
-        
+        let sizeFromTextField = Int(mensShoeSizeTextField.text!)!
         let constant = 33
        // optionalIntegerFromTextField += constant
         //integerFromTextField += constant
-        sizeFromTextField += constant
+        //sizeFromTextField += constant
 //        
 //        mensConvertedShoeSizeLabel.text = "\(integerFromTextField)"
-        mensConvertedShoeSizeLabel.text = "\(sizeFromTextField)"
+        mensConvertedShoeSizeLabel.text = "\(sizeFromTextField + constant)" + " European size"
         mensConvertedShoeSizeLabel.isHidden = false
         
     
